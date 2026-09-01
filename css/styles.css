@@ -1,0 +1,43 @@
+/* Colors and overall page */
+body {
+    background-color: #1c3247;
+    color: #d7dce3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h2 {
+    color: #d7dce3;
+    margin: 15px 0;
+    padding: 5px;
+}
+
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    background-color: #1e3a8a;
+    display: flex;
+}
+
+/* Navigation links */
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+
+/* Navigation hover effect */
+li a:hover {
+    background-color: #3b82f6;
+}
+
+/* Navigation spacing */
+li {
+    margin: 0;
+}
