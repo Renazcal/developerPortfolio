@@ -1,24 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects - Caleb</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h2>Caleb</h2>
-    <h2> 12th</h2>
-    <h2>Python, software dev, website dev</h2>
-    <h2>to open career paths</h2>
-    <h2>make days go faster, make good website, and not get bad grades</h2>
-    <h2>picture</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="journal.html">Weekly Journal</a></li>
-        <li><a href="ai-log.html">AI Engineering Log</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-      </ul>
+
+    <nav>
+        <h2>Caleb</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">Weekly Journal</a></li>
+            <li><a href="ai-log.html">AI Engineering Log</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+
+        <button id="themeToggle">Light Mode</button>
+    </nav>
+
+    <main>
+
+        <h1>My Projects</h1>
+
+        <section class="project-filter">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('javascript')">JavaScript</button>
+            <button onclick="filterProjects('java')">Java</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('other')">Other</button>
+        </section>
+
+        <section class="projects">
+
+            <div class="project-card" data-category="web">
+
+                <img src="img" alt="Screenshot">
+
+                <h2>Portfolio 2.0</h2>
+
+                <p>
+                    My redesigned personal portfolio website.
+                </p>
+
+                <button class="project-button" onclick="showProjectInfo(this)">
+                    View More
+                </button>
+
+                <div class="project-info">
+
+                    <h3>Technologies Used</h3>
+                    <p>HTML, CSS, JavaScript</p>
+
+                    <h3>What I Learned</h3>
+                    <p>
+                        I learned how to organize a website and add
+                        interactive features with JavaScript.
+                    </p>
+
+                    <a href="link" target="_blank">GitHub</a>
+                    <a href="link" target="_blank">Live Project</a>
+
+                </div>
+
+            </div>
+
+            <div class="project-card" data-category="javascript">
+
+                <img src="" alt="Screenshot">
+
+                <h2>Project Name</h2>
+
+                <p>
+                    Description
+                </p>
+
+                <button class="project-button" onclick="showProjectInfo(this)">
+                    View More
+                </button>
+
+                <div class="project-info">
+
+                    <h3>Technologies Used</h3>
+                    <p>HTML, CSS, JavaScript</p>
+
+                    <h3>What I Learned</h3>
+                    <p>
+                        What I learned from this project.
+                    </p>
+
+                    <a href="link" target="_blank">GitHub</a>
+                    <a href="link" target="_blank">Live Project</a>
+
+                </div>
+
+            </div>
+
+            <div class="project-card" data-category="other">
+
+                <img src="img" alt="Screenshot">
+
+                <h2>Project Name</h2>
+
+                <p>
+                    Description
+                </p>
+
+                <button class="project-button" onclick="showProjectInfo(this)">
+                    View More
+                </button>
+
+                <div class="project-info">
+
+                    <h3>Technologies Used</h3>
+                    <p>Python, HTML, CSS</p>
+
+                    <h3>What I Learned</h3>
+                    <p>
+                        What I learned from this project.
+                    </p>
+
+                    <a href="link" target="_blank">GitHub</a>
+                    <a href="link" target="_blank">Live Project</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skills">
+
+            <h2>My Skills</h2>
+
+            <h3>Programming Languages</h3>
+            <p>Python, JavaScript</p>
+
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+
+            <h3>Development Tools</h3>
+            <p>GitHub, VS Code</p>
+
+            <h3>Other Technologies</h3>
+            <p>None yet</p>
+
+        </section>
+
+    </main>
+
+    <button id="backToTop" class="back-to-top">
+        Back to Top
+    </button>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
