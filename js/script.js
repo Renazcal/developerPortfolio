@@ -148,3 +148,8 @@ function updateClock() {
 }
 updateClock();
 setInterval(updateClock,1000)
+items.forEach(function(item) {
+    // create  card
+    // put item info
+    // add to page
+});
